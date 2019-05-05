@@ -379,7 +379,7 @@ CREATE TABLE `oms_order` (
   `auto_confirm_day` int(11) DEFAULT NULL COMMENT '自动确认时间（天）',
   `integration` int(11) DEFAULT NULL COMMENT '可以获得的积分',
   `growth` int(11) DEFAULT NULL COMMENT '可以活动的成长值',
-  `promotion_info` varchar(100) DEFAULT NULL COMMENT '活动信息',
+  `promotion_info` varchar(512) DEFAULT NULL COMMENT '活动信息',
   `bill_type` int(1) DEFAULT NULL COMMENT '发票类型：0->不开发票；1->电子发票；2->纸质发票',
   `bill_header` varchar(200) DEFAULT NULL COMMENT '发票抬头',
   `bill_content` varchar(200) DEFAULT NULL COMMENT '发票内容',
