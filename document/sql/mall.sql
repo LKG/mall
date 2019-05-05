@@ -838,7 +838,7 @@ CREATE TABLE `pms_product` (
   `product_category_id` bigint(20) DEFAULT NULL,
   `feight_template_id` bigint(20) DEFAULT NULL,
   `product_attribute_category_id` bigint(20) DEFAULT NULL,
-  `name` varchar(64) NOT NULL,
+  `name` varchar(256) NOT NULL,
   `pic` varchar(255) DEFAULT NULL,
   `product_sn` varchar(64) NOT NULL COMMENT '货号',
   `delete_status` int(1) DEFAULT NULL COMMENT '删除状态：0->未删除；1->已删除',
@@ -1663,7 +1663,7 @@ DROP TABLE IF EXISTS `sms_home_new_product`;
 CREATE TABLE `sms_home_new_product` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `product_id` bigint(20) DEFAULT NULL,
-  `product_name` varchar(64) DEFAULT NULL,
+  `product_name` varchar(256) DEFAULT NULL,
   `recommend_status` int(1) DEFAULT NULL,
   `sort` int(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -1686,7 +1686,7 @@ DROP TABLE IF EXISTS `sms_home_recommend_product`;
 CREATE TABLE `sms_home_recommend_product` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `product_id` bigint(20) DEFAULT NULL,
-  `product_name` varchar(64) DEFAULT NULL,
+  `product_name` varchar(256) DEFAULT NULL,
   `recommend_status` int(1) DEFAULT NULL,
   `sort` int(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
